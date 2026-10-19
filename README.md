@@ -22,9 +22,14 @@ e abrir <http://localhost:8000>.
 
 ## Publicar (GitHub Pages)
 
-1. Em **Settings → Pages**, em *Source*, escolha **GitHub Actions**.
-2. Faça push para a branch `main` (ou rode o workflow manualmente em **Actions**).
-3. O app fica em `https://<usuario>.github.io/money_converter/`.
+O GitHub Pages é gratuito para repositórios públicos (repositórios privados exigem um plano pago).
+Ele só hospeda os arquivos: o app roda no navegador de quem abre.
+
+1. Deixe o repositório público: **Settings → General → Danger Zone → Change visibility**.
+2. Ligue o Pages: **Settings → Pages → Source → GitHub Actions**.
+3. Todo push na branch `main` publica o app automaticamente (workflow em `.github/workflows/pages.yml`).
+   Também dá para publicar manualmente em **Actions → Publicar no GitHub Pages → Run workflow**.
+4. O app fica em `https://<usuario>.github.io/money_converter/`.
 
 ## Instalar no celular
 
